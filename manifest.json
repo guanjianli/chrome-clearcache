@@ -1,0 +1,23 @@
+{
+"name": "PJH5 Clear Cache",
+"version": "1.0.1",
+"manifest_version": 2, 
+"description": "clear cache fast, very fast",
+"background": { "scripts": ["js/background.js"] },
+"permissions": [
+	"bookmarks","browsingData","contextMenus","notifications",
+	"tabs", "activeTab", "http://*/*", "https://*/*"
+],
+ "icons": {
+    "48": "qq.png"
+}
+ ,"commands" : {
+    "clearcache_extension" : {
+      "suggested_key" : {
+        "default" : "Ctrl+0",
+        "windows" : "Ctrl+0"
+      },
+      "description" : "清空缓存的快捷键"
+    }
+  }
+}
